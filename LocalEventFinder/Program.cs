@@ -14,7 +14,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 //connecting string
-string conStr = @"Server=localhost; Database=EventSubmition; Trusted_Connection=true; TrustServerCertificate=true";
+//string conStr = @"Server=localhost; Database=EventSubmition; Trusted_Connection=true; TrustServerCertificate=true";
+string conStr = @"Server=(localdb)\mssqllocaldb; Database=EventSubmition; Trusted_Connection=true; TrustServerCertificate=true";
+
 builder.Services.AddDbContext<DatabaseContext>(obj => obj.UseSqlServer(conStr));
 
 // Add Identity services
