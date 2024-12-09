@@ -34,5 +34,6 @@ namespace LocalEventFinder.Service
         {
             return _service.Update(id, item);
         }
+
     }
 }
