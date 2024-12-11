@@ -4,6 +4,6 @@ namespace LocalEventFinder.Identity
 {
     public class ApplicationUser: IdentityUser
     {
-        public bool IsTwoFactorEnabled { get; set; } = false;
+        public bool IsTwoFactorEnabled { get; set; } = false; 
     }
 }
