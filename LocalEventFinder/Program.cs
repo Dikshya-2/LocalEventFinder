@@ -22,7 +22,7 @@ builder.Services.AddDbContext<DatabaseContext>(obj => obj.UseSqlServer(conStr));
 // Add Identity services
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<DatabaseContext>()
-    .AddDefaultTokenProviders();
+    .AddDefaultTokenProviders(); 
 
 // Configure JWT Authentication
 builder.Services.AddAuthentication(options =>
